@@ -1,0 +1,74 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --fuente-sans: "Josefin Sans", sans-serif;
+  --color-azul-oscuro: #021C3C;
+  --color-blanco: #FBFBFB;
+  --color-gris: #F2F2F2;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: var(--fuente-sans);
+  background-image: url(/assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*header*/
+.container__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
+}
+
+.container__header__titulo{
+    font-size: 3.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: var(--color-azul-oscuro);
+}
+
+/*main*/
+.container__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  background: transparent;
+}
+
+.container__main__section{
+    margin: 5%;
+}
+
+.container__main__section__a{
+    background: var(--color-azul-oscuro);
+    font-size: 3rem;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 15px;
+    color: var(--color-blanco);
+}
+
+
+/*Resposividad para pantallas de 1400px*/
+@media only screen and (min-width: 1400px) {
+    .container__header__titulo {
+        font-size: 5rem;
+    }
+
+    .container__main {
+        margin: 15%;
+    }
+}
+

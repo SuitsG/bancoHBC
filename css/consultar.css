@@ -1,0 +1,86 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --fuente-sans: "Josefin Sans", sans-serif;
+  --color-azul-oscuro: #021c3c;
+  --color-blanco: #fbfbfb;
+  --color-gris: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-sans);
+  background-image: url(/assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+/*Header*/
+.container__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+}
+.container__header__titulo{
+font-size: 5rem;
+}
+
+
+/*Main*/
+.container__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__main__section{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-azul-oscuro);
+    gap: 2rem;
+    border-radius: 2rem;
+}
+
+.conteiner__main__parrafo{
+font-size: 1.5rem;
+font-family: var(--fuente-sans);
+color: var(--color-blanco);
+}
+
+.conteiner__main__input{
+    font-family: var(--fuente-sans);
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.container__main__section__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner__section__button{
+    font-size: 30px;
+    font-family: var(--fuente-sans);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+/*Resposividad para pantallas de 1400px*/
+@media only screen and (min-width: 1400px) {
+    .container__header__titulo{
+        font-size: 10rem;
+        
+        }
+  
+}

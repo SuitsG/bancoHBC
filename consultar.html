@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar usuario</title>
+    <link rel="stylesheet" href="css/consultar.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+</head>
+
+<body>
+    <header class="container__header">
+        <h1 class="container__header__titulo">HBC</h1>
+    </header>
+    <main class="container__main">
+        <section class="container__main__section">
+            <form method="POST" action="class/VerificarCuenta.php">
+                <div>
+                    <p class="conteiner__main__parrafo"> Número de cuenta</p>
+                    <input class="conteiner__main__input" type="text" name="numeroCuenta" id="numeroCuenta" required>
+                </div>
+                <div class="container__main__section__div">
+                    <button class="conteiner__section__button" name="bottonConsultar" type="submit" value="Validar">Consultar</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

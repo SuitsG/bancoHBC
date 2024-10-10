@@ -1,0 +1,86 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --fuente-sans: "Josefin Sans", sans-serif;
+  --color-azul-oscuro: #021c3c;
+  --color-blanco: #fbfbfb;
+  --color-gris: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-sans);
+  background-image: url(/assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*Header*/
+.container__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
+}
+.container__header__titulo{
+font-size: 4rem;
+
+}
+
+.container__header__parrafo{
+    font-size: 2rem;
+
+}
+/*Main*/
+.container__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__main__form{
+align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: var(--color-azul-oscuro);
+  padding: 25px;
+  border-radius: 10px;
+}
+.container__main__input{
+font-family: var(--fuente-sans);
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.container__main__form__div__p{
+  font-size: 1.5rem;
+  color: var(--color-blanco);
+}
+
+.container__main__button{
+font-size: 30px;
+font-family: var(--fuente-sans);
+border-radius: 15px;
+padding: 5px;
+}
+
+
+/*Resposividad para pantallas de 1400px*/
+@media only screen and (min-width: 1400px) {
+    .container__header__titulo{
+        font-size: 10rem;
+        
+        }
+  
+}

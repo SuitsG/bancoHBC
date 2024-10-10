@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear cuenta</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="css/crearCuenta.css">
+  </head>
+  <body>
+    <header class="container__header">
+      <h1 class="container__header__titulo">HBC</h1>
+      <p class="container__header__parrafo">Formulario para crear una nueva cuenta</p>
+    </header>
+
+    <main class="container__main">
+      <form class="container__main__form" action="agregar_cliente.php" method="POST">
+        <div class="container__main__form__div">
+          <p class="container__main__form__div__p" >Nombre completo</p>
+          <input
+            class="container__main__input"
+            type="text"
+            name="nombreCompleto"
+            id="nombreCompleto"
+            required
+          >
+        </div>
+        <div>
+          <p class="container__main__form__div__p">Tipo de documento</p>
+          <select class="container__main__input" type="text" name="tipoDocumento" id="tipoDocumento" required>
+            <option value="" selected disabled hidden>Selecciona una opción</option>
+            <option value="ciudadania">Cedula de ciudadanía</option>
+            <option value="extranjeria">Cedula de extranjería</option>
+          </select>
+        </div>
+        <div>
+          <p class="container__main__form__div__p">Número de documento</p>
+          <input
+            class="container__main__input"
+            type="text"
+            name="numeroDocumento"
+            id="numeroDocumento"
+            required
+          />
+        </div>
+        <div>
+          <p class="container__main__form__div__p">Tipo de cuenta</p>
+          <select class="container__main__input" type="text" name=" tipoCuenta" id="tipoCuenta" required>
+            <option value="" selected disabled hidden>Selecciona una opción</option>
+            <option value="ahorro"> Ahorro</option>
+            <option value="corriente"> Corriente</option>
+          </select>
+        </div>
+             <input type="hidden" name="form_enviado" value="1">
+            <button class="container__main__button" type="submit">Crear</button>
+        
+      </form>
+      <footer>
+
+
+      </footer>
+    </main>
+  </body>
+</html>
