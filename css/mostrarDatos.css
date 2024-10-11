@@ -1,0 +1,60 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --fuente-sans: "Josefin Sans", sans-serif;
+  --color-azul-oscuro: #021c3c;
+  --color-blanco: #fbfbfb;
+  --color-gris: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-sans);
+  background-image: url(/assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*header*/
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+}
+.header__div{
+    display: flex;
+    justify-content: end;
+}
+.header__div__a{
+    margin: 1rem;
+    padding: 1rem;
+    background: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    text-decoration: none;
+    border-radius: 0.4rem;
+}
+
+.header__titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+/*main*/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.main__div{
+    font-size: 2rem;
+}

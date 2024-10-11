@@ -1,7 +1,7 @@
 <?php 
 require_once('./information/accessInformation.php');
 
-
+$mensaje = "";
 // Función para agregar saldo
 function agregarSaldo($numeroCuenta, $monto) {
     global $clientes, $archivoClientes, $mensaje;
@@ -43,13 +43,4 @@ function retirarSaldo($numeroCuenta, $monto) {
     }
 }
 
-
-/*$numeroCuenta = "0932818497"; // Cambiar por el número de cuenta que desees
-$montoAgregar = 500;          // Monto a agregar
-$montoRetirar = 200; 
-// Agregar saldo
-agregarSaldo($numeroCuenta, $montoAgregar);
-
-// Retirar saldo
-retirarSaldo($numeroCuenta, $montoRetirar);*/
 ?>

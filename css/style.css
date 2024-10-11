@@ -3,18 +3,17 @@
 
 :root {
   --fuente-sans: "Josefin Sans", sans-serif;
-  --color-azul-oscuro: #021C3C;
-  --color-blanco: #FBFBFB;
-  --color-gris: #F2F2F2;
+  --color-azul-oscuro: #021c3c;
+  --color-blanco: #fbfbfb;
+  --color-gris: #f2f2f2;
 }
-
 
 * {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   font-family: var(--fuente-sans);
   background-image: url(/assets/fondo.jpg);
   background-repeat: no-repeat;
@@ -31,44 +30,88 @@ body{
   margin: 4%;
 }
 
-.container__header__titulo{
-    font-size: 3.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    color: var(--color-azul-oscuro);
+.container__header__titulo {
+  font-size: 4rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--color-azul-oscuro);
 }
 
 /*main*/
 .container__main {
   display: flex;
+  flex-direction: column;
+}
+
+.container__main__section__botones {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10%;
-  background: transparent;
+  gap: 1rem;
+  height: 20vh;
 }
 
-.container__main__section{
-    margin: 5%;
+.container__main__section__a {
+  background: var(--color-azul-oscuro);
+  font-size: 3rem;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 15px;
+  color: var(--color-blanco);
+}
+/*Cuenta ahorros*/
+.container__main__section__ahorros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 40vh;
+}
+.container__main__section__ahorros__div {
+  background: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.container__main__section__ahorros__div__ul {
+  padding: 1.5rem;
+}
+.container__main__section__ahorros__img {
+  width: 18%;
 }
 
-.container__main__section__a{
-    background: var(--color-azul-oscuro);
-    font-size: 3rem;
-    text-decoration: none;
-    border-radius: 12px;
-    padding: 15px;
-    color: var(--color-blanco);
+/*Cuenta corriente*/
+.container__main__section__corriente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 50vh;
 }
 
+.container__main__section__corriente__img {
+  width: 18%;
+}
 
+.container__main__section__corriente__div{
+  background: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.container__main__section__corriente__div__ul {
+  padding: 1.5rem;
+}
 /*Resposividad para pantallas de 1400px*/
 @media only screen and (min-width: 1400px) {
-    .container__header__titulo {
-        font-size: 5rem;
-    }
+  .container__header__titulo {
+    font-size: 5rem;
+  }
 
-    .container__main {
-        margin: 15%;
-    }
+  .container__main {
+    margin: 15%;
+  }
 }
-

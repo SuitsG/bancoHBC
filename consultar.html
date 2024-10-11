@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <header class="container__header">
-        <h1 class="container__header__titulo">HBC</h1>
+    <header class="header">
+        <h1 class="header__titulo">HBC</h1>
     </header>
-    <main class="container__main">
-        <section class="container__main__section">
-            <form method="POST" action="class/VerificarCuenta.php">
-                <div>
-                    <p class="conteiner__main__parrafo"> Número de cuenta</p>
-                    <input class="conteiner__main__input" type="text" name="numeroCuenta" id="numeroCuenta" required>
+    <main class="main">
+        <section class="main__section">
+            <form class="main__section__form" method="POST" action="class/VerificarCuenta.php">
+                <div class="main__section__form__div">
+                    <p class="main__section__form__div__p"> Número de cuenta</p>
+                    <input class="main__section__form__div__input" type="text" name="numeroCuenta" id="numeroCuenta" required>
                 </div>
-                <div class="container__main__section__div">
-                    <button class="conteiner__section__button" name="bottonConsultar" type="submit" value="Validar">Consultar</button>
+                <div class="main__section__form__div">
+                     <button class="section__button" name="bottonConsultar" type="submit" value="Validar">Consultar</button>
                 </div>
             </form>
         </section>

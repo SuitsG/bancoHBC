@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banco HBC</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/logo.png">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+  </head>
 
-<body>
+  <body>
     <header class="container__header">
-        <h1 class="container__header__titulo">Bienvenido al banco HBC</h1>
+      <h1 class="container__header__titulo">Bienvenido al banco HBC</h1>
     </header>
     <main class="container__main">
-        <section class="container__main__section">
-            <a class="container__main__section__a" href="/crearCuenta.html">Crear Cuenta</a>
-        </section>
-        <section class="container__main__section">
-            <a class="container__main__section__a" href="/consultar.html">Consultar</a>
-        </section>
+      <section class="container__main__section__botones">
+        <div class="container__main__section__div">
+          <a class="container__main__section__a" href="/crearCuenta.html"
+            >Crear Cuenta</a>
+        </div>
+        <div class="container__main__section__div">
+          <a class="container__main__section__a" href="/consultar.html"
+            >Consultar</a
+          >
+        </div>
+      </section>
+      <section class="container__main__section__ahorros">
+        <div class="container__main__section__ahorros__div">
+          <p class="container__main__section__ahorros__div_p">
+            CUENTA DE AHORROS HBC
+          </p>
+          <ul class="container__main__section__ahorros__div__ul">
+            <li>Porcentaje de interés mensual.</li>
+            <li>
+              Método para depositar los intereses el primer día de cada mes.
+            </li>
+            <li>Solamente se puede retirar un monto menor o igual al saldo.</li>
+          </ul>
+        </div>
+        <img
+          class="container__main__section__ahorros__img"
+          src="assets/ahorros.jpg"
+          alt="imagenAhorros"
+        />
+      </section>
+      <section class="container__main__section__corriente">
+        <img
+          class="container__main__section__corriente__img"
+          src="/assets/corriente.jpg"
+          alt="cunetaCorriente"
+        />
+        <div class="container__main__section__corriente__div">
+          <p class="container__main__section__corriente__div_p">
+            CUENTA CORRIENTE HBC
+          </p>
+          <ul class="container__main__section__corriente__div__ul">
+            <li>Cobro del 4x1000, por mil en cada transacción.</li>
+            <li>
+              Se puede sobregirar hasta en $300.000, cuando el saldo no es
+              <br />suficiente para el retiro.
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>

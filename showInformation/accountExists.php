@@ -24,7 +24,7 @@ if (isset($_SESSION['numeroCuenta'])) {
             $resultado = "Operación no válida.";
         }
     } else {
-        echo "Error: No se ha enviado ningún dato.";
+        echo "";
     }
 
     if (array_key_exists($numeroCuenta, $clientes)) {

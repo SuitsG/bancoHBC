@@ -30,15 +30,17 @@ body {
   align-items: center;
   margin: 4%;
 }
-.container__header__titulo{
-font-size: 4rem;
+
+.container__header__titulo {
+  font-size: 4rem;
 
 }
 
-.container__header__parrafo{
-    font-size: 2rem;
+.container__header__parrafo {
+  font-size: 2rem;
 
 }
+
 /*Main*/
 .container__main {
   display: flex;
@@ -47,8 +49,8 @@ font-size: 4rem;
   align-items: center;
 }
 
-.container__main__form{
-align-items: center;
+.container__main__form {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -56,31 +58,33 @@ align-items: center;
   padding: 25px;
   border-radius: 10px;
 }
-.container__main__input{
-font-family: var(--fuente-sans);
+
+
+.container__main__input {
+  font-family: var(--fuente-sans);
   width: 300px;
   height: 25px;
   border-radius: 10px;
 }
 
-.container__main__form__div__p{
+.container__main__form__div__p {
   font-size: 1.5rem;
   color: var(--color-blanco);
 }
 
-.container__main__button{
-font-size: 30px;
-font-family: var(--fuente-sans);
-border-radius: 15px;
-padding: 5px;
+.container__main__button {
+  font-size: 30px;
+  font-family: var(--fuente-sans);
+  border-radius: 15px;
+  padding: 5px;
 }
 
 
 /*Resposividad para pantallas de 1400px*/
 @media only screen and (min-width: 1400px) {
-    .container__header__titulo{
-        font-size: 10rem;
-        
-        }
-  
+  .container__header__titulo {
+    font-size: 10rem;
+
+  }
+
 }
