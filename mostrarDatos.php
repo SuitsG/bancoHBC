@@ -23,7 +23,8 @@ ultimoCliente();
         <p class="header__p">Su cuenta fue registrada exitisamente</p>
     </header>
     <main class="main">
-        <div class="main__div">
+        <section class="main__section">
+        <div class="main__section__div">
             <p>!Importante recordar, numero de cuenta</p>
             <p>Datos:</p>
             <p>Numero de cuenta: <?= $numeroCuenta ?></p>
@@ -32,6 +33,7 @@ ultimoCliente();
             <p>Numero de identificación: <?= $numeroDocumento ?></p>
             <p>Saldo: <?= $saldo ?></p>
         </div>
+        </section>
     </main>
 </body>
 
