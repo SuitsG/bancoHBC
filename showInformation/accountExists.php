@@ -52,31 +52,39 @@ if (isset($_SESSION['numeroCuenta'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/accountExists.css">
 </head>
 
 <body>
-    <header>
-        <a href="../index.html">Volver a inicio</a>
+    <header class="header">
+        <div class="header__div">
+        <a class="header__button" href="../index.html">Volver a inicio</a>
+    </div>
+        <h1 class="header__h1" >Bienvenido a HBC <?= $nombreCompleto ?></h1>
     </header>
-    <main>
-        <h1>Bienvenido a HBC <?= $nombreCompleto ?></h1>
-        <p>Su numero de cuenta es <?= $numeroCuenta ?></p>
-        <p>Su tipo de cuenta es <?= $tipoCuenta ?></p>
-        <p>Actualmente tiene un saldo de <?= $saldo ?> pesos</p>
-        <p><?= $mensaje?></p>
-        <section>
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-                <label for="monto">Monto a Operar:</label><br>
-                <input type="number" id="monto" name="monto" required><br><br>
+    <main class="main">
+        <section class="main__section">
+        <p class="main__p">Numero de cuenta: <?= $numeroCuenta ?></p>
+        <p class="main__p">tipo de cuenta: <?= $tipoCuenta ?></p>
+        <p class="main__p">Saldo actual: <?= $saldo ?> pesos</p>
+        <p class="main__p__mensaje"><?= $mensaje?></p>
+        <section class="main__div">
+            <form class="main__div__form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <div class="monto__div">
+                <label class="main__div__form__label" for="monto">Monto a Operar:</label><br>
+                <input class="main__div__form__input__monto" type="number" id="monto" name="monto" required><br><br>
+                </div>
+                
+                <label class="main__div__form__label" for="operacion">Seleccione la operación:</label><br>
+                <input class="main__div__form__input" type="radio" id="agregar" name="operacion" value="agregar" required>
+                <label class="main__div__form__label" for="agregar">Agregar Saldo</label><br>
+                <input class="main__div__form__input" type="radio" id="retirar" name="operacion" value="retirar" required>
+                <label class="main__div__form__label" for="retirar">Retirar Saldo</label><br><br>
 
-                <label for="operacion">Seleccione la operación:</label><br>
-                <input type="radio" id="agregar" name="operacion" value="agregar" required>
-                <label for="agregar">Agregar Saldo</label><br>
-                <input type="radio" id="retirar" name="operacion" value="retirar" required>
-                <label for="retirar">Retirar Saldo</label><br><br>
-
-                <button type="submit">Enviar</button>
+                
+                <button class="main__div__form__button" type="submit">Enviar</button>
             </form>
+        </section>
         </section>
     </main>
 </body>

@@ -12,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $tipoCuenta = $_POST['tipoCuenta'];
   $saldo = 0;
 
- 
 
   // Generar un identificador único para el nuevo cliente
   $numeroCuenta = numeroIdentificar($clientes);

@@ -15,7 +15,7 @@ function agregarSaldo($numeroCuenta, $monto) {
         // Guardar los cambios en el archivo JSON
         file_put_contents($archivoClientes, json_encode($clientes));
 
-        $mensaje = "Saldo agregado exitosamente. El nuevo saldo es: $" . $clientes[$numeroCuenta]['saldo'] . "<br>";
+        $mensaje = "Saldo agregado exitosamente.";
     } else {
         $mensaje = "Error: La cuenta con número $numeroCuenta no existe.<br>";
     }
@@ -35,9 +35,9 @@ function retirarSaldo($numeroCuenta, $monto) {
             // Guardar los cambios en el archivo JSON
             file_put_contents($archivoClientes, json_encode($clientes));
 
-            $mensaje = "Saldo retirado exitosamente. El nuevo saldo es: $" . $clientes[$numeroCuenta]['saldo'] . "<br>";
+            $mensaje = "Saldo retirado exitosamente.";
         } else {
-            $mensaje= "Error: No hay suficiente saldo para retirar $monto. Saldo actual: $" . $clientes[$numeroCuenta]['saldo'] . "<br>";
+            $mensaje= "Error: No hay suficiente saldo para retirar.";
         }
     } else {
         echo "Error: La cuenta con número $numeroCuenta no existe.<br>";

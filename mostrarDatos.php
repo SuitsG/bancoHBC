@@ -20,10 +20,10 @@ ultimoCliente();
             <a class="header__div__a" href="./index.html">Volver a la pagina pricipal</a>
         </div>
         <h1 class="header__titulo">Bienvenido a HBC</h1>
+        <p class="header__p">Su cuenta fue registrada exitisamente</p>
     </header>
     <main class="main">
         <div class="main__div">
-            <p>Su cuenta fue registrada exitisamente</p>
             <p>!Importante recordar, numero de cuenta</p>
             <p>Datos:</p>
             <p>Numero de cuenta: <?= $numeroCuenta ?></p>

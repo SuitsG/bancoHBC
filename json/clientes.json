@@ -4,62 +4,27 @@
         "tipoDocumento": "ciudadania",
         "numeroDocumento": 23564768,
         "tipoCuenta": "corriente",
-        "saldo": 0
+        "saldo": 7778
     },
     "0202149650": {
         "nombreCompleto": "Moyas",
         "tipoDocumento": "ciudadania",
         "numeroDocumento": 23253242,
         "tipoCuenta": "ahorro",
-        "saldo": 12300
-    },
-    "0404651593": {
-        "nombreCompleto": "Laura",
-        "tipoDocumento": "ciudadania",
-        "numeroDocumento": 676778788787,
-        "tipoCuenta": "corriente",
-        "saldo": 0
-    },
-    "0162325071": {
-        "nombreCompleto": "Carolina Gomez",
-        "tipoDocumento": "ciudadania",
-        "numeroDocumento": 456789,
-        "tipoCuenta": "corriente",
-        "saldo": 0
-    },
-    "0008487961": {
-        "nombreCompleto": "Angel Camargo",
-        "tipoDocumento": "extranjeria",
-        "numeroDocumento": 34567980,
-        "tipoCuenta": "ahorro",
         "saldo": 2000
     },
-    "0934491677": {
-        "nombreCompleto": "Juan Carlos",
+    "0924724045": {
+        "nombreCompleto": "Laura Tatiana Bernal",
         "tipoDocumento": "ciudadania",
-        "numeroDocumento": 90765889,
+        "numeroDocumento": 2332232332,
         "tipoCuenta": "corriente",
         "saldo": 0
     },
-    "0946802060": {
-        "nombreCompleto": "Jhonnasther Paul Real Osorio",
+    "0382986441": {
+        "nombreCompleto": "Juan Montero",
         "tipoDocumento": "extranjeria",
-        "numeroDocumento": 45679843,
-        "tipoCuenta": "corriente",
-        "saldo": 0
-    },
-    "0581229315": {
-        "nombreCompleto": "Maria Pineda",
-        "tipoDocumento": "ciudadania",
-        "numeroDocumento": 355343,
-        "tipoCuenta": "corriente",
-        "saldo": 0
-    },
-    "0667041379": {
-        "nombreCompleto": "Hola Mundo",
-        "tipoDocumento": "extranjeria",
-        "numeroDocumento": 26723673228,
-        "tipoCuenta": "corriente",
+        "numeroDocumento": 23456980,
+        "tipoCuenta": "ahorro",
         "saldo": 0
     }
 }

@@ -18,14 +18,18 @@
             <form class="main__section__form" method="POST" action="class/VerificarCuenta.php">
                 <div class="main__section__form__div">
                     <p class="main__section__form__div__p"> Número de cuenta</p>
-                    <input class="main__section__form__div__input" type="text" name="numeroCuenta" id="numeroCuenta" required>
+                    <input class="main__section__form__div__input" type="text" name="numeroCuenta" id="numeroCuenta"
+                    pattern="[0-9]{1,30}" 
+                    maxlength="30" 
+                    title="Solo se permiten numeros"     
+                    required>
                 </div>
                 <div class="main__section__form__div">
-                     <button class="section__button" name="bottonConsultar" type="submit" value="Validar">Consultar</button>
+                    <button class="section__button" name="bottonConsultar" type="submit"
+                        value="Validar">Consultar</button>
                 </div>
             </form>
         </section>
-
     </main>
     <footer>
 

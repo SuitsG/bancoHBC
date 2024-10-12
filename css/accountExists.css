@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+    --fuente-sans: "Josefin Sans", sans-serif;
+    --color-azul-oscuro: #021c3c;
+    --color-blanco: #fbfbfb;
+    --color-gris: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-sans);
+}
+
+body {
+    font-family: var(--fuente-sans);
+    background-image: url(/assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    justify-content: space-between;
+}
+
+.header__div {
+    display: flex;
+    justify-content: end;
+}
+
+.header__button {
+    background-color: var(--color-blanco);
+    color: var(--color-azul-oscuro);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.header__h1 {
+    align-self: center;
+    font-size: 3.5rem;
+    color: var(--color-azul-oscuro);
+}
+
+/*Main*/
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main__section {
+    background-color: var(--color-azul-oscuro);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2.5rem;
+}
+
+.main__p {
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    padding: 4px;
+}
+
+.main__p__mensaje{
+    color: red;
+    font-size: 2rem;
+    padding: 4px;
+}
+
+.main__div {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+
+.main__div__form__label {
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.main__div__form__input {
+    transform: scale(1.5);
+}
+
+.main__div__form__input__monto {
+    transform: scale(1.5);
+    width: 10rem;
+    margin-left: 2.9rem;
+    padding: 0.3rem;
+}
+
+.main__div__form__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blanco);
+    color: var(--color-azul-oscuro);
+    font-size: 1.5rem;
+    font-family: var(--fuente-sans);
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 180px;
+}
+
+
+.monto__div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
