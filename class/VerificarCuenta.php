@@ -1,7 +1,8 @@
 <?php
 // Ruta del archivo JSON
 session_start();
-require_once('./information/accessInformation.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/information/accessInformation.php');
+
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

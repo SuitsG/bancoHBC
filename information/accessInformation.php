@@ -1,6 +1,6 @@
 <?php
 
-$archivoClientes = './json/clientes.json';
+$archivoClientes = ($_SERVER['DOCUMENT_ROOT'] . '/json/clientes.json');
 
 if (!file_exists($archivoClientes)) {
     die("Error: El archivo $archivoClientes no existe.");

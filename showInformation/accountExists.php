@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('./information/accessInformation.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/information/accessInformation.php');
 
 // Inicializar la variable
 $nombreCompleto = ''; // Valor predeterminado
@@ -9,7 +9,7 @@ $nombreCompleto = ''; // Valor predeterminado
 if (isset($_SESSION['numeroCuenta'])) {
     $numeroCuenta = $_SESSION['numeroCuenta'];
 
-    require_once('./information/funtions.php');
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/information/funtions.php');
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $monto = (float) $_POST['monto'];

@@ -22,73 +22,68 @@ body {
   position: relative;
 }
 /*Header*/
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4%;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
 }
-.header__titulo{
-font-size: 5rem;
+.header__titulo {
+  font-size: 5rem;
 }
-
 
 /*Main*/
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main__section{
-    display: flex;
-    padding: 2rem;
-    background: var(--color-azul-oscuro);
-    border-radius: 2rem;
+.main__section {
+  display: flex;
+  padding: 2rem;
+  background: var(--color-azul-oscuro);
+  border-radius: 2rem;
 }
-.main__section__form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.main__section__form__div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.main__section__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.main__section__form__div__p{
-font-size: 2rem;
-font-family: var(--fuente-sans);
-color: var(--color-blanco);
+.main__section__form__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.main__section__form__div__input{
-    font-family: var(--fuente-sans);
-    width: 200px;
-    height: 25px;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    padding: 0.5rem;
+.main__section__form__div__p {
+  font-size: 2rem;
+  font-family: var(--fuente-sans);
+  color: var(--color-blanco);
 }
 
-.section__button{
-    font-size: 30px;
-    font-family: var(--fuente-sans);
-    border-radius: 15px;
-    padding: 5px;
+.main__section__form__div__input {
+  font-family: var(--fuente-sans);
+  width: 200px;
+  height: 25px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
+.section__button {
+  font-size: 30px;
+  font-family: var(--fuente-sans);
+  border-radius: 15px;
+  padding: 5px;
+}
 
 /*Resposividad para pantallas de 1400px*/
 @media only screen and (min-width: 1400px) {
-    .header__titulo{
-        font-size: 10rem;
-        
-        }
-  
+  .header__titulo {
+    font-size: 10rem;
+  }
 }
-

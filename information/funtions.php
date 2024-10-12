@@ -1,5 +1,6 @@
 <?php 
-require_once('./information/accessInformation.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/information/accessInformation.php');
+
 
 $mensaje = "";
 // Función para agregar saldo

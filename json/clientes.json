@@ -1,30 +1,65 @@
 {
-  "0932818497": {
-    "nombreCompleto": "Maicol",
-    "tipoDocumento": "ciudadania",
-    "numeroDocumento": 23564768,
-    "tipoCuenta": "corriente",
-    "saldo": 0
-  },
-  "0202149650": {
-    "nombreCompleto": "Moyas",
-    "tipoDocumento": "ciudadania",
-    "numeroDocumento": 23253242,
-    "tipoCuenta": "ahorro",
-    "saldo": 12300
-  },
-  "0404651593": {
-    "nombreCompleto": "Laura",
-    "tipoDocumento": "ciudadania",
-    "numeroDocumento": 676778788787,
-    "tipoCuenta": "corriente",
-    "saldo": 0
-  },
-  "0162325071": {
-    "nombreCompleto": "Carolina Gomez",
-    "tipoDocumento": "ciudadania",
-    "numeroDocumento": 456789,
-    "tipoCuenta": "corriente",
-    "saldo": 0
-  }
+    "0932818497": {
+        "nombreCompleto": "Maicol",
+        "tipoDocumento": "ciudadania",
+        "numeroDocumento": 23564768,
+        "tipoCuenta": "corriente",
+        "saldo": 0
+    },
+    "0202149650": {
+        "nombreCompleto": "Moyas",
+        "tipoDocumento": "ciudadania",
+        "numeroDocumento": 23253242,
+        "tipoCuenta": "ahorro",
+        "saldo": 12300
+    },
+    "0404651593": {
+        "nombreCompleto": "Laura",
+        "tipoDocumento": "ciudadania",
+        "numeroDocumento": 676778788787,
+        "tipoCuenta": "corriente",
+        "saldo": 0
+    },
+    "0162325071": {
+        "nombreCompleto": "Carolina Gomez",
+        "tipoDocumento": "ciudadania",
+        "numeroDocumento": 456789,
+        "tipoCuenta": "corriente",
+        "saldo": 0
+    },
+    "0008487961": {
+        "nombreCompleto": "Angel Camargo",
+        "tipoDocumento": "extranjeria",
+        "numeroDocumento": 34567980,
+        "tipoCuenta": "ahorro",
+        "saldo": 2000
+    },
+    "0934491677": {
+        "nombreCompleto": "Juan Carlos",
+        "tipoDocumento": "ciudadania",
+        "numeroDocumento": 90765889,
+        "tipoCuenta": "corriente",
+        "saldo": 0
+    },
+    "0946802060": {
+        "nombreCompleto": "Jhonnasther Paul Real Osorio",
+        "tipoDocumento": "extranjeria",
+        "numeroDocumento": 45679843,
+        "tipoCuenta": "corriente",
+        "saldo": 0
+    },
+    "0581229315": {
+        "nombreCompleto": "Maria Pineda",
+        "tipoDocumento": "ciudadania",
+        "numeroDocumento": 355343,
+        "tipoCuenta": "corriente",
+        "saldo": 0
+    },
+    "0667041379": {
+        "nombreCompleto": "Hola Mundo",
+        "tipoDocumento": "extranjeria",
+        "numeroDocumento": 26723673228,
+        "tipoCuenta": "corriente",
+        "saldo": 0
+    }
 }
