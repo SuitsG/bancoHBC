@@ -51,40 +51,55 @@ if (isset($_SESSION['numeroCuenta'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cuenta Bancaria</title>
     <link rel="stylesheet" href="/css/accountExists.css">
+    <link rel="icon" type="image/x-icon" href="/assets/icono.png">
+    <script>
+        function enviarFormularios() {
+            var formulario1 = document.getElementById('formulario1');
+
+            // Verificar si el formulario es válido antes de enviarlo
+            if (formulario1.checkValidity()) {
+                formulario1.submit();  // Solo se envía si es válido
+            } else {
+                formulario1.reportValidity();  // Muestra los mensajes de error
+            } 
+        }
+    </script>
 </head>
 
 <body>
     <header class="header">
         <div class="header__div">
-        <a class="header__button" href="../index.html">Volver a inicio</a>
-    </div>
-        <h1 class="header__h1" >Bienvenido a HBC <?= $nombreCompleto ?></h1>
+            <a class="header__button" href="../index.html">Volver a inicio</a>
+        </div>
+        <h1 class="header__h1">"Bienvenido a HBC, <?= $nombreCompleto?>"</h1>
     </header>
     <main class="main">
         <section class="main__section">
-        <p class="main__p">Numero de cuenta: <?= $numeroCuenta ?></p>
-        <p class="main__p">tipo de cuenta: <?= $tipoCuenta ?></p>
-        <p class="main__p">Saldo actual: <?= $saldo ?> pesos</p>
-        <p class="main__p__mensaje"><?= $mensaje?></p>
-        <section class="main__div">
-            <form class="main__div__form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-                <div class="monto__div">
-                <label class="main__div__form__label" for="monto">Monto a Operar:</label><br>
-                <input class="main__div__form__input__monto" type="number" id="monto" name="monto" required><br><br>
-                </div>
-                
-                <label class="main__div__form__label" for="operacion">Seleccione la operación:</label><br>
-                <input class="main__div__form__input" type="radio" id="agregar" name="operacion" value="agregar" required>
-                <label class="main__div__form__label" for="agregar">Agregar Saldo</label><br>
-                <input class="main__div__form__input" type="radio" id="retirar" name="operacion" value="retirar" required>
-                <label class="main__div__form__label" for="retirar">Retirar Saldo</label><br><br>
+            <p class="main__p">Número de cuenta: <?= $numeroCuenta ?></p>
+            <p class="main__p">Tipo de cuenta: <?= $tipoCuenta ?></p>
+            <p class="main__p">Saldo actual: <?= $saldo ?> pesos</p>
+            <p class="main__p__mensaje"><?= $mensaje ?></p>
+            <section class="main__div">
+                <form class="main__div__form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="formulario1">
+                    <div class="monto__div">
+                        <label class="main__div__form__label" for="monto">Monto a Operar:</label><br>
+                        <input class="main__div__form__input__monto" type="number" pattern=[0-9] title="Debe de contener al menos un número sin comas ni puntos"  id="monto" name="monto" required><br>
+                    </div>
 
-                
-                <button class="main__div__form__button" type="submit">Enviar</button>
-            </form>
-        </section>
+                    <label class="main__div__form__label" for="operacion">Seleccione la operación:</label><br>
+                    <input class="main__div__form__input" type="radio" id="agregar" name="operacion" value="agregar" required>
+                    <label class="main__div__form__label" for="agregar">Agregar Saldo</label><br>
+                    <input class="main__div__form__input" type="radio" id="retirar" name="operacion" value="retirar" required>
+                    <label class="main__div__form__label" for="retirar">Retirar Saldo</label><br><br>
+
+                </form>
+
+            </section>
+            <div class="div__button">
+            <button type="submit" onclick="enviarFormularios()" class="main__div__form__button" >Enviar</button>
+            </div>
         </section>
     </main>
 </body>

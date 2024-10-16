@@ -1,30 +1,32 @@
 {
-    "0932818497": {
-        "nombreCompleto": "Maicol",
-        "tipoDocumento": "ciudadania",
-        "numeroDocumento": 23564768,
-        "tipoCuenta": "corriente",
-        "saldo": 7778
-    },
-    "0202149650": {
-        "nombreCompleto": "Moyas",
-        "tipoDocumento": "ciudadania",
-        "numeroDocumento": 23253242,
-        "tipoCuenta": "ahorro",
-        "saldo": 2000
-    },
-    "0924724045": {
-        "nombreCompleto": "Laura Tatiana Bernal",
-        "tipoDocumento": "ciudadania",
-        "numeroDocumento": 2332232332,
-        "tipoCuenta": "corriente",
-        "saldo": 0
-    },
-    "0382986441": {
-        "nombreCompleto": "Juan Montero",
-        "tipoDocumento": "extranjeria",
-        "numeroDocumento": 23456980,
-        "tipoCuenta": "ahorro",
-        "saldo": 0
-    }
+  
+  "0959815684": {
+    "nombreCompleto": "Benito",
+    "tipoDocumento": "ciudadania",
+    "numeroDocumento": 7412859633,
+    "tipoCuenta": "ahorro",
+    "saldo": 0
+  },
+  "0505075602": {
+    "nombreCompleto": "Zayn",
+    "tipoDocumento": "ciudadania",
+    "numeroDocumento": 7412859633,
+    "tipoCuenta": "ahorro",
+    "saldo": 0
+  },
+ 
+  "0908897009": {
+    "nombreCompleto": "Benito",
+    "tipoDocumento": "ciudadania",
+    "numeroDocumento": 3334567894,
+    "tipoCuenta": "corriente",
+    "saldo": 10000
+  },
+  "0392995178": {
+    "nombreCompleto": "Martina benza",
+    "tipoDocumento": "ciudadania",
+    "numeroDocumento": 1234566543,
+    "tipoCuenta": "ahorro",
+    "saldo": 105000
+  }
 }
